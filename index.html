@@ -1,8 +1,20 @@
+---
+feature_name: Web Bluetooth / Device Information Characteristics
+chrome_version: 50
+check_min_version: true
+feature_id: 5264933985976320
+icon_url: icon.png
+index: index.html
+---
 
+{% include_relative _includes/intro.html %}
 
-<p>Enable the Chrome experimental web platform features by entering chrome://flags then enabling Experimental Web Platform features</p>
-<p>Pair the Instabeat device with your computer then click the button below to download the device data</p>
-<p>A pop up window will apppear so that you can select the Instabeat device</p>
+<p>This sample illustrates the use of the Web Bluetooth API to read <a
+target="_blank"
+href="https://developer.bluetooth.org/gatt/services/Pages/ServiceViewer.aspx?u=org.bluetooth.service.device_information.xml">Device
+Information Service</a> characteristics from a nearby Bluetooth Device. You may want to check out the <a href="device-information-characteristics-async-await.html">Device Information Characteristics (Async Await)</a> sample.</p>
+
+<p>Note: The <a target="_blank" href="https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.serial_number_string.xml">Serial Number String</a> characteristic is <a target="_blank" href="https://github.com/WebBluetoothCG/registries/blob/7b46fd5d58ea98fa098372a774fd7b981f0bdb0d/gatt_blacklist.txt#L34-L36">blacklisted</a> and forbidden from being accessed.</p>
 
 <button>Get Bluetooth Device Information Characteristics</button>
 
